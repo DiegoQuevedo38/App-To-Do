@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+
+:root{
+    --radius: 15px;
+    --app-width: 600px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url("https://i.pinimg.com/originals/04/ee/4b/04ee4bd0475b903f22197ff50b78e171.png") center;
+    background-size: cover;
+}
+
+.app {
+    color:antiquewhite;
+    background-color: dimgray;
+    width: var(--app-width);
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: 0 15px 40px -20px black;
+}
+
+.app {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.todo-input {
+    width: 100%;
+    margin-bottom: 2rem;
+    border:none;
+    border-radius: var(--radius);
+    padding: 1rem 1.5rem;
+    font-size: 20px;
+    background-color: rgb(162, 157, 157);
+    color: white;
+}
+
+.todos,
+.completed-todos,
+.uncompleted-todos {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.todo-item {
+    background-color: blanchedalmond;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.todo-item span{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.empty {
+    font-size: 15px;
+    color: rgb(166, 158, 158);
+}
+
+.todo-item input [type=checkbox]{
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(94, 225, 94);
+}
+
+.todo-item a{
+    color: rgb(202, 193, 193);
+}
+
+.todo-item a svg{
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.completed-todos .todo-item{
+    background-color: rgb(130, 227, 130);
+    text-decoration: line-through;
+}
+
+.completed-title {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 30px;
+}
